@@ -1,0 +1,51 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+
+# MongoDB
+/data
+/db
+*.log
+
+# Express.js
+.env
+
+# Angular
+/dist
+/node_modules
+
+# IDE and Editor Files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+logs/
+*.log
+
+# Dependency lock files
+package-lock.json
+yarn.lock
+
+# macOS
+.DS_Store
+
+# Compiled binary files
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Thumbnails
+*.thumbnails/
+*.thumbnail
+
+# Environment files
+.env
+
+# Cache and temp files
+.cache/
+.temp/

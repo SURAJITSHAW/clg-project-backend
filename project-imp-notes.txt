@@ -1,0 +1,3 @@
+exp() -> for the whole app
+exp.Router() -> for only routing
+jwt -> json web token
