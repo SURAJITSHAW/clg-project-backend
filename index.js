@@ -3,7 +3,7 @@ const app = exp();
 
 const mongoose = require("mongoose");
 mongoose.connect(
-    "mongodb+srv://surajitshawofficial:Jdo5PJrTuo2GKIDa@cluster0.oygorkh.GMITdb.net/?retryWrites=true&w=majority"
+    "mongodb+srv://surajitshawofficial:Jdo5PJrTuo2GKIDa@cluster0.oygorkh.mongodb.net/gmitdb?retryWrites=true&w=majority"
 );
 
 const cr = require("./routes/Category");
