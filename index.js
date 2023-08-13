@@ -1,5 +1,16 @@
 const exp = require('express'); //sys module
+const cors = require('cors'); //sys module
+const bodyParser = require('body-parser'); //sys module
+const fu = require('express-fileupload'); //sys module
 const app = exp();
+
+app.use(cors());
+app.use(fu());
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
+
+// parse application/json
+app.use(bodyParser.json())
 
 const mongoose = require("mongoose");
 mongoose.connect(
