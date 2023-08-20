@@ -4,6 +4,8 @@ const bodyParser = require('body-parser'); //sys module
 const fu = require('express-fileupload'); //sys module
 const app = exp();
 
+app.use(exp.static('public'));
+
 app.use(cors());
 app.use(fu());
 // parse application/x-www-form-urlencoded
