@@ -16,6 +16,15 @@ router.post("/add", async (req, res) => {
     res.json({msg:"Add Category"});
 })
 
+router.post("/del", async (req, res) => {
+
+    var id = req.body.id;
+
+    await Cat.findByIdAndDelete(id);
+
+    res.json({msg:"Delete Category"});
+})
+
 
 router.get("/sel",async (req, res) => {
     var data = await Cat.find();
