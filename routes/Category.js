@@ -20,7 +20,7 @@ router.post("/del", async (req, res) => {
 
     var id = req.body.id;
 
-    await Cat.findByIdAndDelete(id);
+    await Cat.findByIdAndDelete(id); // delete query in mongoDB
 
     res.json({msg:"Delete Category"});
 })
